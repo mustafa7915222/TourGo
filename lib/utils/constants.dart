@@ -131,4 +131,26 @@ class AppConstants {
   static const String textFormFieldPasswordLabel = 'كلمة المرور';
   static const String textFormFieldEmailHint = '0987654321';
   static const String textFormFieldPasswordHint = 'ادخل كلمة المرور';
+
+
+  /* images */
+
+// assets images
+  static const double assetsImageWidth = 0.6;
+  static const double assetsImageHeight = 0.6;
+  static const double assetsImageSmallLogoWidth = 0.25;
+  static const double assetsImageSmallLogoHeight = 0.2;
+  static const double assetsImageBigLogoWidth = 0.9;
+  static const double assetsImageBigLogoHeight = 0.9;
+  static const String assetsImagePathLogo= "logo.png";
+  static const String assetsImagePathLogin= "login.png";
+  static const String assetsImagePathWelcome1= "welcome1.png";
+  static const String assetsImagePathWelcome2= "welcome2.png";
+  static const String assetsImagePathWelcome3= "welcome3.png";
+
+//network images
+  static const double networkImageSmallWidth = 0.35;
+  static const double networkImageSmallHeight = 0.25;
+  static const double networkImageBigWidth = 0.9;
+  static const double networkImageBigHeight = 0.5;
 }

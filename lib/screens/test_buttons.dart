@@ -49,7 +49,7 @@ class _TestButtonPageState extends State<TestButtonPage> {
               Center(
                 child: Text(
                   text,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontFamily: AppConstants.fontFamily, fontSize: 18),
                 ),
               ),

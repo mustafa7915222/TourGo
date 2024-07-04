@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tourgo/screens/test_image.dart';
 import '../utils/constants.dart';
 import '../widgets/buttons.dart';
 import '../widgets/text.dart';
@@ -59,7 +60,6 @@ class _TestTextFromFieldPageState extends State<TestTextFromFieldPage> {
                 ),
                 Center(
                   child: textFormFieldClick(context,_dateController, AppConstants.textFormFieldDateLabel,AppConstants.textFormFieldEmailHint,Icons.date_range,onTapFunction: (){
-                    print("tapped");
                     setState(() {
                       _dateController.text ="11-7-2021";
         
@@ -92,6 +92,10 @@ class _TestTextFromFieldPageState extends State<TestTextFromFieldPage> {
                         }),
                     textButtonWithBorder(context, AppConstants.nextButtonText,
                         onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) =>  const TestImagePage()),
+                          );
                         }),
                   ],
                 ),
