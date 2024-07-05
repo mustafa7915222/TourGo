@@ -4,13 +4,16 @@ import '../utils/constants.dart';
 
 /// A widget that displays a title text with a specific style.
 Widget textTitle(String text) {
-  return Text(
-    text,
-    style: const TextStyle(
-      fontSize: AppConstants.pageTitleFontSize,
-      color: AppConstants.myBlack,
-      fontWeight: AppConstants.pageTitleFontWeight,
-      fontFamily: AppConstants.fontFamily,
+  return Padding(
+    padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 16.0),
+    child: Text(
+      text,
+      style: const TextStyle(
+        fontSize: AppConstants.pageTitleFontSize,
+        color: AppConstants.myBlack,
+        fontWeight: AppConstants.pageTitleFontWeight,
+        fontFamily: AppConstants.fontFamily,
+      ),
     ),
   );
 }
@@ -18,7 +21,7 @@ Widget textTitle(String text) {
 /// A widget that displays a paragraph text with padding and a specific style.
 Widget textParagraph(String text) {
   return Padding(
-    padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+    padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 16.0),
     child: Text(
       text,
       style: const TextStyle(
@@ -33,7 +36,7 @@ Widget textParagraph(String text) {
 /// A widget that displays primary text with padding and a specific style.
 Widget textPrimary(String text) {
   return Padding(
-    padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 16.0),
+    padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 16.0),
     child: Text(
       text,
       style: const TextStyle(
@@ -49,7 +52,7 @@ Widget textPrimary(String text) {
 /// A widget that displays secondary text with padding and a specific style.
 Widget textSecondary(String text) {
   return Padding(
-    padding: const EdgeInsets.fromLTRB(0, 8, 16, 8),
+    padding: const EdgeInsets.fromLTRB(0, 4, 16, 4),
     child: Text(
       text,
       style: const TextStyle(
@@ -68,7 +71,7 @@ Widget textLink(String text, {required void Function() onTap}) {
   return GestureDetector(
     onTap: onTap,
     child: Padding(
-      padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 4.0),
+      padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 4.0),
       child: Text(
         text,
         style: const TextStyle(
@@ -80,6 +83,23 @@ Widget textLink(String text, {required void Function() onTap}) {
           fontFamily: AppConstants.fontFamily,
         ),
       ),
+    ),
+  );
+}
+
+Widget textListTitle(String text) {
+  return Padding(
+    padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 16.0),
+    child: Text(
+      text,
+      style: const TextStyle(
+        fontSize: AppConstants.paragraphFontSize,
+        color: AppConstants.myBlack,
+        fontWeight: AppConstants.paragraphFontWeight,
+        fontFamily: AppConstants.fontFamily,
+      ),
+      overflow: TextOverflow.ellipsis,
+
     ),
   );
 }

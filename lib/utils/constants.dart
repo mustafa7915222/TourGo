@@ -69,7 +69,7 @@ class AppConstants {
 
 /* text */
   // page title
-  static const double pageTitleFontSize = 20;
+  static const double pageTitleFontSize = 18;
   static const FontWeight pageTitleFontWeight = FontWeight.bold;
 
 // page title text
@@ -153,4 +153,26 @@ class AppConstants {
   static const double networkImageSmallHeight = 0.25;
   static const double networkImageBigWidth = 0.9;
   static const double networkImageBigHeight = 0.5;
+
+
+  /*List*/
+// horizontal list
+  static const double horizontalListRadius = 15.0;
+  static const double horizontalListMarginAll = 8.0;
+  static const double horizontalListSpreadRadius = 1;
+  static const double horizontalListBlurRadius = 2;
+  static const double horizontalListOffsetFrom = 0;
+  static const double horizontalListOffsetTo = 2;
+  static Color horizontalListBorderShadowColor = Colors.black.withOpacity(
+      0.2);
+
+  // vertical list
+  static const double verticalListRadius = 15.0;
+  static const double verticalListMarginAll = 8.0;
+  static const double verticalListSpreadRadius = 1;
+  static const double verticalListBlurRadius = 2;
+  static const double verticalListOffsetFrom = 0;
+  static const double verticalListOffsetTo = 2;
+  static Color verticalListBorderShadowColor = Colors.black.withOpacity(
+      0.2);
 }

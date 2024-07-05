@@ -1,11 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:tourgo/screens/test_text_form_field.dart';
+import 'package:tourgo/screens/test_list_h.dart';
 import '../utils/constants.dart';
 import '../widgets/buttons.dart';
 import '../widgets/images.dart';
-import '../widgets/text.dart';
 
 class TestImagePage extends StatefulWidget {
   const TestImagePage({super.key});
@@ -79,7 +76,10 @@ class _TestImagePageState extends State<TestImagePage> {
                           }),
                       textButtonWithBorder(context, AppConstants.nextButtonText,
                           onPressed: () {
-
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) =>  const TestListPage()),
+                            );
                           }),
                     ],
                   ),
